@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>WebPhotoSnap</title>
+  <script src="dist/app.js" defer></script>
+</head>
+<body onload="grabWebCamVideo()">
+    <div id="videoCanvas">
+    <video id="camera" autoplay playsinline></video>
+    <canvas id="photo"></canvas>
+  </div>
+
+  <div id="buttons">
+    <button id="snap">Snap</button>
+  </div>
+
+  <!-- ptz buttons -->
+  <div>
+    <button onmousedown="moveleft()">LEFT</button>
+    <button onmousedown="moveup()">UP</button>
+    <button onmousedown="movedown()">DOWN</button>
+    <button onmousedown="moveright()">RIGHT</button>
+  </div>
+  <div>
+    <button onmousedown="zoomin()">ZOOM+</button>
+    <button onmousedown="zoomout()">ZOOM-</button>
+  </div>
+
+  <button id="requestbutton">Request</button>
+  <input id="zoom" type="range" hidden>
+</body>
+</html>

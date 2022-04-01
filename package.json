@@ -1,0 +1,26 @@
+{
+  "name": "webphotosnap",
+  "version": "1.0.0",
+  "description": "WebPhotoSnap",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "lite-server"
+  },
+  "keywords": [
+    "typescript",
+    "course"
+  ],
+  "author": "GNM",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/w3c-image-capture": "^1.0.5",
+    "@types/w3c-web-usb": "^1.0.6",
+    "lite-server": "^2.5.4"
+  },
+  "dependencies": {
+    "image-capture": "^0.4.0",
+    "lodash": "^4.17.21",
+    "webrtc": "^1.14.1"
+  }
+}
